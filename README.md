@@ -15,6 +15,7 @@ We have fine-tuned 3 transformer-based models, Bert (code), Roberta (code), and 
 
 Table 1. Comparison of the performance of several Transformer-based models on senses dataset.
 Model name                      Macro F1
+
 Roberta-base                    0.92
 Bert                            0.91
 Electra                         0.91
@@ -59,6 +60,7 @@ Fig. 2. Confusion matrix for Prunned version of Roberta's performance on the val
 Table 3. Per class accuracy (in %) and F1s.
 Model name                Class 0, Anger  Class 1, Fear   Class 2, Joy   Class 3, Love  Class 4, Sadness   Class 5, Surprise 
                           F1     Acc%     F1      Acc%    F1     Acc%     F1 Acc%        F1    Acc%         F1     Acc%
+                          
 roberta-base              0.968  96.4     0.950   91.3    0.874  97.2     0.940 94.5     0.897 90.1         0.875  95.1
 BEST_PRUNED               0.967  95.3     0.952   91.8    0.868  96.1     0.938 95.6     0.902 91.5         0.874  93.8
 BEST_INT8 (quantization)  0.960  95.1     0.945   90.8    0.869  96.6     0.941 94.9     0.880 89.6         0.869  93.8
